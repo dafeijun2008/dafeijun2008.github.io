@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>JavaScript 进阶问题 | Dajun</title>
+    <meta name="description" content="笔记">
+    <link rel="icon" href="/logo.jpg">
+    
+    <link rel="preload" href="/assets/css/0.styles.7f3e8fa0.css" as="style"><link rel="preload" href="/assets/js/app.3c18ba2b.js" as="script"><link rel="preload" href="/assets/js/2.2d7f6841.js" as="script"><link rel="preload" href="/assets/js/30.68cd5081.js" as="script"><link rel="prefetch" href="/assets/js/10.4e623ea8.js"><link rel="prefetch" href="/assets/js/11.1b2a7179.js"><link rel="prefetch" href="/assets/js/12.8062ade3.js"><link rel="prefetch" href="/assets/js/13.edc49012.js"><link rel="prefetch" href="/assets/js/14.e84ee3f4.js"><link rel="prefetch" href="/assets/js/15.e8d4142b.js"><link rel="prefetch" href="/assets/js/16.40a39847.js"><link rel="prefetch" href="/assets/js/17.1c075161.js"><link rel="prefetch" href="/assets/js/18.34b4e583.js"><link rel="prefetch" href="/assets/js/19.7f97ee03.js"><link rel="prefetch" href="/assets/js/20.aabac5c0.js"><link rel="prefetch" href="/assets/js/21.d261013f.js"><link rel="prefetch" href="/assets/js/22.b7560755.js"><link rel="prefetch" href="/assets/js/23.eb76ccea.js"><link rel="prefetch" href="/assets/js/24.6d592b30.js"><link rel="prefetch" href="/assets/js/25.b30f5339.js"><link rel="prefetch" href="/assets/js/26.8efe380d.js"><link rel="prefetch" href="/assets/js/27.94f1d5b7.js"><link rel="prefetch" href="/assets/js/28.4d86e4cc.js"><link rel="prefetch" href="/assets/js/29.2b342c8d.js"><link rel="prefetch" href="/assets/js/3.976ff7bf.js"><link rel="prefetch" href="/assets/js/31.fef0ba54.js"><link rel="prefetch" href="/assets/js/32.baa6441c.js"><link rel="prefetch" href="/assets/js/33.9c22ff1b.js"><link rel="prefetch" href="/assets/js/34.a08208a6.js"><link rel="prefetch" href="/assets/js/35.f0d94ae9.js"><link rel="prefetch" href="/assets/js/36.8f885fc3.js"><link rel="prefetch" href="/assets/js/37.7fd3e68c.js"><link rel="prefetch" href="/assets/js/38.bd73a7cf.js"><link rel="prefetch" href="/assets/js/39.2dca5b84.js"><link rel="prefetch" href="/assets/js/4.ab25bdf6.js"><link rel="prefetch" href="/assets/js/40.e324d414.js"><link rel="prefetch" href="/assets/js/41.32b91a1c.js"><link rel="prefetch" href="/assets/js/42.fee64b88.js"><link rel="prefetch" href="/assets/js/43.fc4fcb6c.js"><link rel="prefetch" href="/assets/js/44.3aeab9ce.js"><link rel="prefetch" href="/assets/js/45.811463a8.js"><link rel="prefetch" href="/assets/js/46.94aea5ef.js"><link rel="prefetch" href="/assets/js/47.2863ce6a.js"><link rel="prefetch" href="/assets/js/48.4239ef8f.js"><link rel="prefetch" href="/assets/js/49.7e48151d.js"><link rel="prefetch" href="/assets/js/5.c62fc94e.js"><link rel="prefetch" href="/assets/js/6.5bb0aa3d.js"><link rel="prefetch" href="/assets/js/7.8c724b93.js"><link rel="prefetch" href="/assets/js/8.d40cf774.js"><link rel="prefetch" href="/assets/js/9.a84cb03a.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.7f3e8fa0.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Dajun</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/Interview/" class="nav-link router-link-active">面试</a></div><div class="nav-item"><a href="/Notes/" class="nav-link">笔记</a></div><div class="nav-item"><a href="/Summary/" class="nav-link">总结</a></div><div class="nav-item"><a href="/Reprint/" class="nav-link">转载</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/Interview/" class="nav-link router-link-active">面试</a></div><div class="nav-item"><a href="/Notes/" class="nav-link">笔记</a></div><div class="nav-item"><a href="/Summary/" class="nav-link">总结</a></div><div class="nav-item"><a href="/Reprint/" class="nav-link">转载</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>HTML&amp;&amp;CSS</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>JavaScript</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/Interview/JavaScript/" class="sidebar-link">Javascript 题集 1</a></li><li><a href="/Interview/JavaScript/index3.html" class="sidebar-link">js 题集 2</a></li><li><a href="/Interview/JavaScript/index2.html" class="sidebar-link">javascript 相关程序计算题</a></li><li><a href="/Interview/JavaScript/xuanzeti.html" class="active sidebar-link">JavaScript 进阶问题</a></li><li><a href="/Interview/JavaScript/kaodian.html" class="sidebar-link">Javascript面试核心考点</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Vue</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>ES6</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Webpack</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>优化</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>计算机基础</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="javascript-进阶问题"><a href="#javascript-进阶问题" aria-hidden="true" class="header-anchor">#</a> JavaScript 进阶问题</h2> <h3 id="_1-下面代码的输出是什么？"><a href="#_1-下面代码的输出是什么？" aria-hidden="true" class="header-anchor">#</a> 1. 下面代码的输出是什么？</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">sayHi</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>age<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">var</span> name <span class="token operator">=</span> <span class="token string">&quot;Lydia&quot;</span><span class="token punctuation">;</span>
+  <span class="token keyword">let</span> age <span class="token operator">=</span> <span class="token number">21</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">sayHi</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>A: Lydia 和 undefined<br>
+B: Lydia 和 ReferenceError<br>
+C: ReferenceError 和 21<br>
+D: undefined 和 ReferenceError<br>
+答案: D</p> <p>在函数中，我们首先使用var关键字声明了name变量。 这意味着变量在创建阶段会被提升（JavaScript会在创建变量创建阶段为其分配内存空间），默认值为undefined，直到我们实际执行到使用该变量的行。 我们还没有为name变量赋值，所以它仍然保持undefined的值。</p> <p>使用let关键字（和const）声明的变量也会存在变量提升，但与var不同，初始化没有被提升。 在我们声明（初始化）它们之前，它们是不可访问的。 这被称为“暂时死区”。 当我们在声明变量之前尝试访问变量时，JavaScript会抛出一个ReferenceError。</p> <p>译者注：</p> <p>关于let的是否存在变量提升，我们何以用下面的例子来验证：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> name <span class="token operator">=</span> <span class="token string">'ConardLi'</span>
+<span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span> <span class="token comment">// Uncaught ReferenceError: name is not defined</span>
+  <span class="token keyword">let</span> name <span class="token operator">=</span> <span class="token string">'code秘密花园'</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>let变量如果不存在变量提升，console.log(name)就会输出ConardLi，结果却抛出了ReferenceError，那么这很好的说明了，let也存在变量提升，但是它存在一个“暂时死区”，在变量未初始化或赋值前不允许访问。</p> <p>变量的赋值可以分为三个阶段：</p> <p>创建变量，在内存中开辟空间<br>
+初始化变量，将变量初始化为undefined<br>
+真正赋值<br>
+关于let、var和function：</p> <p>let 的「创建」过程被提升了，但是初始化没有提升。<br>
+var 的「创建」和「初始化」都被提升了。<br>
+function 的「创建」「初始化」和「赋值」都被提升了。</p> <h3 id="_2-下面代码的输出是什么"><a href="#_2-下面代码的输出是什么" aria-hidden="true" class="header-anchor">#</a> 2. 下面代码的输出是什么?</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">3</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">3</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>A: 0 1 2 and 0 1 2<br>
+B: 0 1 2 and 3 3 3<br>
+C: 3 3 3 and 0 1 2<br>
+答案: C</p> <p>由于JavaScript中的事件执行机制，setTimeout函数真正被执行时，循环已经走完。 由于第一个循环中的变量i是使用var关键字声明的，因此该值是全局的。 在循环期间，我们每次使用一元运算符++都会将i的值增加1。 因此在第一个例子中，当调用setTimeout函数时，i已经被赋值为3。</p> <p>在第二个循环中，使用let关键字声明变量i：使用let（和const）关键字声明的变量是具有块作用域的（块是{}之间的任何东西）。 在每次迭代期间，i将被创建为一个新值，并且每个值都会存在于循环内的块级作用域。</p> <h3 id="_3-下面代码的输出是什么"><a href="#_3-下面代码的输出是什么" aria-hidden="true" class="header-anchor">#</a> 3. 下面代码的输出是什么?</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> shape <span class="token operator">=</span> <span class="token punctuation">{</span>
+  radius<span class="token punctuation">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+  <span class="token function">diameter</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>radius <span class="token operator">*</span> <span class="token number">2</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function-variable function">perimeter</span><span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token number">2</span> <span class="token operator">*</span> Math<span class="token punctuation">.</span><span class="token constant">PI</span> <span class="token operator">*</span> <span class="token keyword">this</span><span class="token punctuation">.</span>radius
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+shape<span class="token punctuation">.</span><span class="token function">diameter</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+shape<span class="token punctuation">.</span><span class="token function">perimeter</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>A: 20 and 62.83185307179586<br>
+B: 20 and NaN<br>
+C: 20 and 63<br>
+D: NaN and 63<br>
+答案: B</p> <p>请注意，diameter是普通函数，而perimeter是箭头函数。</p> <p>对于箭头函数，this关键字指向是它所在上下文（定义时的位置）的环境，与普通函数不同！ 这意味着当我们调用perimeter时，它不是指向shape对象，而是指其定义时的环境（window）。没有值radius属性，返回undefined。</p> <h3 id="_4-下面代码的输出是什么"><a href="#_4-下面代码的输出是什么" aria-hidden="true" class="header-anchor">#</a> 4. 下面代码的输出是什么?</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token operator">+</span><span class="token boolean">true</span><span class="token punctuation">;</span>
+<span class="token operator">!</span><span class="token string">&quot;Lydia&quot;</span><span class="token punctuation">;</span>
+</code></pre></div><p>A: 1 and false<br>
+B: false and NaN<br>
+C: false and false<br>
+答案: A</p> <p>一元加号会尝试将boolean类型转换为数字类型。 true被转换为1，false被转换为0。</p> <p>字符串'Lydia'是一个真值。 我们实际上要问的是“这个真值是假的吗？”。 这会返回false。</p> <h3 id="_5-哪个选项是不正确的"><a href="#_5-哪个选项是不正确的" aria-hidden="true" class="header-anchor">#</a> 5. 哪个选项是不正确的?</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> bird <span class="token operator">=</span> <span class="token punctuation">{</span>
+  size<span class="token punctuation">:</span> <span class="token string">&quot;small&quot;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> mouse <span class="token operator">=</span> <span class="token punctuation">{</span>
+  name<span class="token punctuation">:</span> <span class="token string">&quot;Mickey&quot;</span><span class="token punctuation">,</span>
+  small<span class="token punctuation">:</span> <span class="token boolean">true</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>A: mouse.bird.size<br>
+B: mouse[bird.size]<br>
+C: mouse[bird[&quot;size&quot;]]<br>
+D: All of them are valid<br>
+答案: A</p> <p>在JavaScript中，所有对象键都是字符串（除了Symbol）。尽管有时我们可能不会给定字符串类型，但它们总是被转换为字符串。</p> <p>JavaScript解释语句。当我们使用方括号表示法时，它会看到第一个左括号[，然后继续，直到找到右括号]。只有在那个时候，它才会对这个语句求值。</p> <p>mouse [bird.size]：首先它会对bird.size求值，得到small。 mouse [“small”]返回true。</p> <p>但是，使用点表示法，这不会发生。 mouse没有名为bird的键，这意味着mouse.bird是undefined。 然后，我们使用点符号来询问size：mouse.bird.size。 由于mouse.bird是undefined，我们实际上是在询问undefined.size。 这是无效的，并将抛出Cannot read property &quot;size&quot; of undefined。</p> <h3 id="_6-下面代码的输出是什么"><a href="#_6-下面代码的输出是什么" aria-hidden="true" class="header-anchor">#</a> 6. 下面代码的输出是什么?</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> c <span class="token operator">=</span> <span class="token punctuation">{</span> greeting<span class="token punctuation">:</span> <span class="token string">&quot;Hey!&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> d<span class="token punctuation">;</span>
+
+d <span class="token operator">=</span> c<span class="token punctuation">;</span>
+c<span class="token punctuation">.</span>greeting <span class="token operator">=</span> <span class="token string">&quot;Hello&quot;</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>d<span class="token punctuation">.</span>greeting<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>A: Hello<br>
+B: undefined<br>
+C: ReferenceError<br>
+D: TypeError<br>
+答案: A</p> <p>在JavaScript中，当设置它们彼此相等时，所有对象都通过引用进行交互。</p> <p>首先，变量c为对象保存一个值。 之后，我们将d指定为c与对象相同的引用。</p> <p>更改一个对象时，可以更改所有对象。</p> <h3 id="_7-下面代码的输出是什么"><a href="#_7-下面代码的输出是什么" aria-hidden="true" class="header-anchor">#</a> 7. 下面代码的输出是什么?</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> a <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> b <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Number</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> c <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a <span class="token operator">==</span> b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a <span class="token operator">===</span> b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>b <span class="token operator">===</span> c<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>A: true false true<br>
+B: false false true<br>
+C: true false false<br>
+D: false true true<br>
+答案: C</p> <p>new Number（）是一个内置的函数构造函数。 虽然它看起来像一个数字，但它并不是一个真正的数字：它有一堆额外的功能，是一个对象。</p> <p>当我们使用==运算符时，它只检查它是否具有相同的值。 他们都有3的值，所以它返回true。</p> <p>译者注：==会引发隐式类型转换，右侧的对象类型会自动拆箱为Number类型。
+然而，当我们使用===操作符时，类型和值都需要相等，new Number()不是一个数字，是一个对象类型。两者都返回 false。</p> <h3 id="_8-下面代码的输出是什么"><a href="#_8-下面代码的输出是什么" aria-hidden="true" class="header-anchor">#</a> 8. 下面代码的输出是什么?</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">class</span> <span class="token class-name">Chameleon</span> <span class="token punctuation">{</span>
+  <span class="token keyword">static</span> <span class="token function">colorChange</span><span class="token punctuation">(</span><span class="token parameter">newColor</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>newColor <span class="token operator">=</span> newColor<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token punctuation">{</span> newColor <span class="token operator">=</span> <span class="token string">&quot;green&quot;</span> <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>newColor <span class="token operator">=</span> newColor<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> freddie <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Chameleon</span><span class="token punctuation">(</span><span class="token punctuation">{</span> newColor<span class="token punctuation">:</span> <span class="token string">&quot;purple&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+freddie<span class="token punctuation">.</span><span class="token function">colorChange</span><span class="token punctuation">(</span><span class="token string">&quot;orange&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>A: orange<br>
+B: purple<br>
+C: green<br>
+D: TypeError<br>
+答案: D</p> <p>colorChange方法是静态的。 静态方法仅在创建它们的构造函数中存在，并且不能传递给任何子级。 由于freddie是一个子级对象，函数不会传递，所以在freddie实例上不存在freddie方法：抛出TypeError。</p> <h3 id="_9-下面代码的输出是什么"><a href="#_9-下面代码的输出是什么" aria-hidden="true" class="header-anchor">#</a> 9. 下面代码的输出是什么?</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> greeting<span class="token punctuation">;</span>
+greetign <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span> <span class="token comment">// Typo!</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>greetign<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>A: {}<br>
+B: ReferenceError: greetign is not defined<br>
+C: undefined<br>
+答案: A</p> <p>控制台会输出空对象，因为我们刚刚在全局对象上创建了一个空对象！ 当我们错误地将greeting输入为greetign时，JS解释器实际上在浏览器中将其视为global.greetign = {}（或window.greetign = {}）。</p> <p>为了避免这种情况，我们可以使用“use strict”。 这可以确保在将变量赋值之前必须声明变量。</p> <h3 id="_10-当我们这样做时会发生什么"><a href="#_10-当我们这样做时会发生什么" aria-hidden="true" class="header-anchor">#</a> 10. 当我们这样做时会发生什么?</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">bark</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;Woof!&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+bark<span class="token punctuation">.</span>animal <span class="token operator">=</span> <span class="token string">&quot;dog&quot;</span><span class="token punctuation">;</span>
+</code></pre></div><p>A: Nothing, this is totally fine!<br>
+B: SyntaxError. You cannot add properties to a function this way.<br>
+C: undefined<br>
+D: ReferenceError<br>
+答案: A</p> <p>这在JavaScript中是可能的，因为函数也是对象！（原始类型之外的所有东西都是对象）</p> <p>函数是一种特殊类型的对象。您自己编写的代码并不是实际的函数。 该函数是具有属性的对象，此属性是可调用的。</p> <h3 id="_11-下面代码的输出是什么"><a href="#_11-下面代码的输出是什么" aria-hidden="true" class="header-anchor">#</a> 11. 下面代码的输出是什么?</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">Person</span><span class="token punctuation">(</span><span class="token parameter">firstName<span class="token punctuation">,</span> lastName</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>firstName <span class="token operator">=</span> firstName<span class="token punctuation">;</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>lastName <span class="token operator">=</span> lastName<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> member <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Person</span><span class="token punctuation">(</span><span class="token string">&quot;Lydia&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Hallie&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+Person<span class="token punctuation">.</span><span class="token function-variable function">getFullName</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token keyword">this</span><span class="token punctuation">.</span>firstName <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>lastName<span class="token punctuation">;</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>member<span class="token punctuation">.</span><span class="token function">getFullName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>A: TypeError<br>
+B: SyntaxError<br>
+C: Lydia Hallie<br>
+D: undefined undefined<br>
+答案: A</p> <p>您不能像使用常规对象那样向构造函数添加属性。 如果要一次向所有对象添加功能，则必须使用原型。 所以在这种情况下应该这样写：</p> <p>Person.prototype.getFullName = function () {
+return <code>${this.firstName} ${this.lastName}</code>;
+}
+这样会使member.getFullName()是可用的，为什么样做是对的？ 假设我们将此方法添加到构造函数本身。 也许不是每个Person实例都需要这种方法。这会浪费大量内存空间，因为它们仍然具有该属性，这占用了每个实例的内存空间。 相反，如果我们只将它添加到原型中，我们只需将它放在内存中的一个位置，但它们都可以访问它！</p> <h3 id="_12-下面代码的输出是什么"><a href="#_12-下面代码的输出是什么" aria-hidden="true" class="header-anchor">#</a> 12. 下面代码的输出是什么?</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">Person</span><span class="token punctuation">(</span><span class="token parameter">firstName<span class="token punctuation">,</span> lastName</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>firstName <span class="token operator">=</span> firstName<span class="token punctuation">;</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>lastName <span class="token operator">=</span> lastName<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> lydia <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Person</span><span class="token punctuation">(</span><span class="token string">&quot;Lydia&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Hallie&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> sarah <span class="token operator">=</span> <span class="token function">Person</span><span class="token punctuation">(</span><span class="token string">&quot;Sarah&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Smith&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>lydia<span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>sarah<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>A: Person {firstName: &quot;Lydia&quot;, lastName: &quot;Hallie&quot;} and undefined<br>
+B: Person {firstName: &quot;Lydia&quot;, lastName: &quot;Hallie&quot;} and Person {firstName: &quot;Sarah&quot;, lastName: &quot;Smith&quot;}<br>
+C: Person {firstName: &quot;Lydia&quot;, lastName: &quot;Hallie&quot;} and {}<br>
+D:Person {firstName: &quot;Lydia&quot;, lastName: &quot;Hallie&quot;} and ReferenceError<br>
+答案: A</p> <p>对于sarah，我们没有使用new关键字。 使用new时，它指的是我们创建的新空对象。 但是，如果你不添加new它指的是全局对象！</p> <p>我们指定了this.firstName等于'Sarah和this.lastName等于Smith。 我们实际做的是定义global.firstName ='Sarah'和global.lastName ='Smith。 sarah本身的返回值是undefined。</p> <h3 id="_12-事件传播的三个阶段是什么？"><a href="#_12-事件传播的三个阶段是什么？" aria-hidden="true" class="header-anchor">#</a> 12. 事件传播的三个阶段是什么？?</h3> <p>A: 目标 &gt; 捕获 &gt; 冒泡<br>
+B: 冒泡 &gt; 目标 &gt; 捕获<br>
+C: 目标 &gt; 冒泡 &gt; 捕获<br>
+D: 捕获 &gt; 目标 &gt; 冒泡<br>
+答案: D</p> <p>在捕获阶段，事件通过父元素向下传递到目标元素。 然后它到达目标元素，冒泡开始。</p> <h3 id="_13-所有对象都有原型"><a href="#_13-所有对象都有原型" aria-hidden="true" class="header-anchor">#</a> 13. 所有对象都有原型.</h3> <p>A: 对<br>
+B: 错误<br>
+答案: B</p> <p>除基础对象外，所有对象都有原型。 基础对象可以访问某些方法和属性，例如.toString。 这就是您可以使用内置JavaScript方法的原因！ 所有这些方法都可以在原型上找到。 虽然JavaScript无法直接在您的对象上找到它，但它会沿着原型链向下寻找并在那里找到它，这使您可以访问它。</p> <p>译者注：基础对象指原型链终点的对象。基础对象的原型是null。</p> <h3 id="_14-下面代码的输出是什么"><a href="#_14-下面代码的输出是什么" aria-hidden="true" class="header-anchor">#</a> 14. 下面代码的输出是什么?</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">sum</span><span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span> b</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> a <span class="token operator">+</span> b<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">sum</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">&quot;2&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>A: NaN<br>
+B: TypeError<br>
+C: &quot;12&quot;<br>
+D: 3<br>
+答案: C</p> <p>JavaScript是一种动态类型语言：我们没有指定某些变量的类型。 在您不知情的情况下，值可以自动转换为另一种类型，称为隐式类型转换。 强制从一种类型转换为另一种类型。</p> <p>在此示例中，JavaScript将数字1转换为字符串，以使函数有意义并返回值。 在让数字类型（1）和字符串类型（'2'）相加时，该数字被视为字符串。 我们可以连接像“Hello”+“World”这样的字符串，所以这里发生的是“1”+“2”返回“12”。</p> <h3 id="_15-下面代码的输出是什么"><a href="#_15-下面代码的输出是什么" aria-hidden="true" class="header-anchor">#</a> 15. 下面代码的输出是什么?</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> number <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>number<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token operator">++</span>number<span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>number<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>A: 1 1 2<br>
+B: 1 2 2<br>
+C: 0 2 2<br>
+D: 0 1 2<br>
+答案: C</p> <p>后缀一元运算符++：</p> <p>返回值（返回0）<br>
+增加值（数字现在是1）<br>
+前缀一元运算符++：</p> <p>增加值（数字现在是2）<br>
+返回值（返回2）<br>
+所以返回0 2 2。</p> <h3 id="_16-下面代码的输出是什么"><a href="#_16-下面代码的输出是什么" aria-hidden="true" class="header-anchor">#</a> 16. 下面代码的输出是什么?</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">getPersonInfo</span><span class="token punctuation">(</span><span class="token parameter">one<span class="token punctuation">,</span> two<span class="token punctuation">,</span> three</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>one<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>two<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>three<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> person <span class="token operator">=</span> <span class="token string">&quot;Lydia&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> age <span class="token operator">=</span> <span class="token number">21</span><span class="token punctuation">;</span>
+
+getPersonInfo<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>person<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> is </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>age<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> years old</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span>
+</code></pre></div><p>A: Lydia 21 [&quot;&quot;, &quot;is&quot;, &quot;years old&quot;]<br>
+B: [&quot;&quot;, &quot;is&quot;, &quot;years old&quot;] Lydia 21<br>
+C: Lydia [&quot;&quot;, &quot;is&quot;, &quot;years old&quot;] 21<br>
+答案: B</p> <p>如果使用标记的模板字符串，则第一个参数的值始终是字符串值的数组。 其余参数获取传递到模板字符串中的表达式的值！</p> <h3 id="_17-下面代码的输出是什么"><a href="#_17-下面代码的输出是什么" aria-hidden="true" class="header-anchor">#</a> 17. 下面代码的输出是什么?</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">checkAge</span><span class="token punctuation">(</span><span class="token parameter">data</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>data <span class="token operator">===</span> <span class="token punctuation">{</span> age<span class="token punctuation">:</span> <span class="token number">18</span> <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;You are an adult!&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>data <span class="token operator">==</span> <span class="token punctuation">{</span> age<span class="token punctuation">:</span> <span class="token number">18</span> <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;You are still an adult.&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">Hmm.. You don't have an age I guess</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">checkAge</span><span class="token punctuation">(</span><span class="token punctuation">{</span> age<span class="token punctuation">:</span> <span class="token number">18</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>A: You are an adult!<br>
+B: You are still an adult.<br>
+C: Hmm.. You don't have an age I guess<br>
+答案: C</p> <p>在比较相等性，原始类型通过它们的值进行比较，而对象通过它们的引用进行比较。JavaScript检查对象是否具有对内存中相同位置的引用。</p> <p>我们作为参数传递的对象和我们用于检查相等性的对象在内存中位于不同位置，所以它们的引用是不同的。</p> <p>这就是为什么{ age: 18 } === { age: 18 }和 { age: 18 } == { age: 18 } 返回 false的原因。</p> <h3 id="_18-下面代码的输出是什么"><a href="#_18-下面代码的输出是什么" aria-hidden="true" class="header-anchor">#</a> 18. 下面代码的输出是什么?</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">getAge</span><span class="token punctuation">(</span><span class="token parameter"><span class="token operator">...</span>args</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">typeof</span> args<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">getAge</span><span class="token punctuation">(</span><span class="token number">21</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>A: &quot;number&quot;<br>
+B: &quot;array&quot;<br>
+C: &quot;object&quot;<br>
+D: &quot;NaN&quot;<br>
+答案: C</p> <p>扩展运算符（... args）返回一个带参数的数组。 数组是一个对象，因此typeof args返回object。</p> <h3 id="_20-下面代码的输出是什么"><a href="#_20-下面代码的输出是什么" aria-hidden="true" class="header-anchor">#</a> 20. 下面代码的输出是什么?</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">getAge</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token string">&quot;use strict&quot;</span><span class="token punctuation">;</span>
+  age <span class="token operator">=</span> <span class="token number">21</span><span class="token punctuation">;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>age<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">getAge</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>A: 21<br>
+B: undefined<br>
+C: ReferenceError<br>
+D: TypeError<br>
+答案: C</p> <p>使用“use strict”，可以确保不会意外地声明全局变量。 我们从未声明变量age，因为我们使用`use strict'，它会引发一个ReferenceError。 如果我们不使用“use strict”，它就会起作用，因为属性age会被添加到全局对象中。</p> <h3 id="_21-下面代码的输出是什么"><a href="#_21-下面代码的输出是什么" aria-hidden="true" class="header-anchor">#</a> 21. 下面代码的输出是什么?</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> sum <span class="token operator">=</span> <span class="token function">eval</span><span class="token punctuation">(</span><span class="token string">&quot;10*10+5&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>A: 105<br>
+B: &quot;105&quot;<br>
+C: TypeError<br>
+D: &quot;10*10+5&quot;<br>
+答案: A</p> <p>eval会为字符串传递的代码求值。 如果它是一个表达式，就像在这种情况下一样，它会计算表达式。 表达式为10 * 10 + 5计算得到105。</p> <h3 id="_22-cool-secret可以访问多长时间"><a href="#_22-cool-secret可以访问多长时间" aria-hidden="true" class="header-anchor">#</a> 22. cool_secret可以访问多长时间?</h3> <div class="language-js extra-class"><pre class="language-js"><code>sessionStorage<span class="token punctuation">.</span><span class="token function">setItem</span><span class="token punctuation">(</span><span class="token string">&quot;cool_secret&quot;</span><span class="token punctuation">,</span> <span class="token number">123</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>A：永远，数据不会丢失。<br>
+B：用户关闭选项卡时。<br>
+C：当用户关闭整个浏览器时，不仅是选项卡。<br>
+D：用户关闭计算机时。<br>
+答案: B</p> <p>关闭选项卡后，将删除存储在sessionStorage中的数据。</p> <p>如果使用localStorage，数据将永远存在，除非例如调用localStorage.clear()。</p> <h3 id="_23-下面代码的输出是什么"><a href="#_23-下面代码的输出是什么" aria-hidden="true" class="header-anchor">#</a> 23. 下面代码的输出是什么?</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> num <span class="token operator">=</span> <span class="token number">8</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> num <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>A: 8<br>
+B: 10<br>
+C: SyntaxError<br>
+D: ReferenceError<br>
+答案: B</p> <p>使用var关键字，您可以用相同的名称声明多个变量。然后变量将保存最新的值。</p> <p>您不能使用let或const来实现这一点，因为它们是块作用域的。</p> <h3 id="_24-下面代码的输出是什么"><a href="#_24-下面代码的输出是什么" aria-hidden="true" class="header-anchor">#</a> 24. 下面代码的输出是什么?</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token number">1</span><span class="token punctuation">:</span> <span class="token string">&quot;a&quot;</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">:</span> <span class="token string">&quot;b&quot;</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">:</span> <span class="token string">&quot;c&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> <span class="token keyword">set</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Set</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+obj<span class="token punctuation">.</span><span class="token function">hasOwnProperty</span><span class="token punctuation">(</span><span class="token string">&quot;1&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+obj<span class="token punctuation">.</span><span class="token function">hasOwnProperty</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">set</span><span class="token punctuation">.</span><span class="token function">has</span><span class="token punctuation">(</span><span class="token string">&quot;1&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">set</span><span class="token punctuation">.</span><span class="token function">has</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>A: false true false true<br>
+B: false true true true<br>
+C: true true false true<br>
+D: true true true true<br>
+答案: C</p> <p>所有对象键（不包括Symbols）都会被存储为字符串，即使你没有给定字符串类型的键。 这就是为什么obj.hasOwnProperty（'1'）也返回true。</p> <p>上面的说法不适用于Set。 在我们的Set中没有“1”：set.has（'1'）返回false。 它有数字类型1，set.has（1）返回true。</p> <h3 id="_25-下面代码的输出是什么"><a href="#_25-下面代码的输出是什么" aria-hidden="true" class="header-anchor">#</a> 25. 下面代码的输出是什么?</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span> a<span class="token punctuation">:</span> <span class="token string">&quot;one&quot;</span><span class="token punctuation">,</span> b<span class="token punctuation">:</span> <span class="token string">&quot;two&quot;</span><span class="token punctuation">,</span> a<span class="token punctuation">:</span> <span class="token string">&quot;three&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>A: { a: &quot;one&quot;, b: &quot;two&quot; }<br>
+B: { b: &quot;two&quot;, a: &quot;three&quot; }<br>
+C: { a: &quot;three&quot;, b: &quot;two&quot; }<br>
+D: SyntaxError<br>
+答案: C</p> <p>如果对象有两个具有相同名称的键，则将替前面的键。它仍将处于第一个位置，但具有最后指定的值。</p> <h3 id="_26-javascript全局执行上下文为你创建了两个东西-全局对象和this关键字"><a href="#_26-javascript全局执行上下文为你创建了两个东西-全局对象和this关键字" aria-hidden="true" class="header-anchor">#</a> 26. JavaScript全局执行上下文为你创建了两个东西:全局对象和this关键字.</h3> <p>A: 对<br>
+B: 错误<br>
+C: 视情况而定<br>
+答案: A</p> <p>基本执行上下文是全局执行上下文:它是代码中随处可访问的内容。</p> <h3 id="_27-下面代码的输出是什么"><a href="#_27-下面代码的输出是什么" aria-hidden="true" class="header-anchor">#</a> 27. 下面代码的输出是什么?</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">5</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>i <span class="token operator">===</span> <span class="token number">3</span><span class="token punctuation">)</span> <span class="token keyword">continue</span><span class="token punctuation">;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>A: 1 2<br>
+B: 1 2 3<br>
+C: 1 2 4<br>
+D: 1 3 4<br>
+答案: C</p> <p>如果某个条件返回true，则continue语句跳过迭代。</p> <h3 id="_28-下面代码的输出是什么"><a href="#_28-下面代码的输出是什么" aria-hidden="true" class="header-anchor">#</a> 28. 下面代码的输出是什么?</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token class-name">String</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">giveLydiaPizza</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token string">&quot;Just give Lydia pizza already!&quot;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> name <span class="token operator">=</span> <span class="token string">&quot;Lydia&quot;</span><span class="token punctuation">;</span>
+
+name<span class="token punctuation">.</span><span class="token function">giveLydiaPizza</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>A: &quot;Just give Lydia pizza already!&quot;<br>
+B: TypeError: not a function<br>
+C: SyntaxError<br>
+D: undefined<br>
+答案: A</p> <p>String是一个内置的构造函数，我们可以为它添加属性。 我刚给它的原型添加了一个方法。 原始类型的字符串自动转换为字符串对象，由字符串原型函数生成。 因此，所有字符串（字符串对象）都可以访问该方法！</p> <p>译者注：</p> <p>当使用基本类型的字符串调用giveLydiaPizza时，实际上发生了下面的过程：</p> <p>创建一个String的包装类型实例<br>
+在实例上调用substring方法<br>
+销毁实例</p> <h3 id="_29-下面代码的输出是什么"><a href="#_29-下面代码的输出是什么" aria-hidden="true" class="header-anchor">#</a> 29. 下面代码的输出是什么?</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> a <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> b <span class="token operator">=</span> <span class="token punctuation">{</span> key<span class="token punctuation">:</span> <span class="token string">&quot;b&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> c <span class="token operator">=</span> <span class="token punctuation">{</span> key<span class="token punctuation">:</span> <span class="token string">&quot;c&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+a<span class="token punctuation">[</span>b<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">123</span><span class="token punctuation">;</span>
+a<span class="token punctuation">[</span>c<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">456</span><span class="token punctuation">;</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">[</span>b<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>A: 123<br>
+B: 456<br>
+C: undefined<br>
+D: ReferenceError<br>
+答案: B</p> <p>对象键自动转换为字符串。我们试图将一个对象设置为对象a的键，其值为123。</p> <p>但是，当对象自动转换为字符串化时，它变成了[Object object]。 所以我们在这里说的是a[&quot;Object object&quot;] = 123。 然后，我们可以尝试再次做同样的事情。 c对象同样会发生隐式类型转换。那么，a[&quot;Object object&quot;] = 456。</p> <p>然后，我们打印a[b]，它实际上是a[&quot;Object object&quot;]。 我们将其设置为456，因此返回456。</p> <h3 id="_30-下面代码的输出是什么"><a href="#_30-下面代码的输出是什么" aria-hidden="true" class="header-anchor">#</a> 30. 下面代码的输出是什么?</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> <span class="token function-variable function">foo</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;First&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> <span class="token function-variable function">bar</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;Second&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> <span class="token function-variable function">baz</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;Third&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token function">bar</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">baz</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>A: First Second Third<br>
+B: First Third Second<br>
+C: Second First Third<br>
+D: Second Third First<br>
+答案: B</p> <p>我们有一个setTimeout函数并首先调用它。 然而却最后打印了它。</p> <p>这是因为在浏览器中，我们不只有运行时引擎，我们还有一个叫做WebAPI的东西。WebAPI为我们提供了setTimeout函数，例如DOM。</p> <p>将callback推送到WebAPI后，setTimeout函数本身（但不是回调！）从堆栈中弹出。</p> <p>现在，调用foo，并打印First。</p> <p>foo从堆栈弹出，baz被调用，并打印Third。</p> <p>WebAPI不能只是在准备就绪时将内容添加到堆栈中。 相反，它将回调函数推送到一个称为任务队列的东西。</p> <p>这是事件循环开始工作的地方。 事件循环查看堆栈和任务队列。 如果堆栈为空，则会占用队列中的第一个内容并将其推送到堆栈中。</p> <p>bar被调用，Second被打印，它从栈中弹出。</p> <h3 id="_31-单击按钮时event-target是什么"><a href="#_31-单击按钮时event-target是什么" aria-hidden="true" class="header-anchor">#</a> 31. 单击按钮时event.target是什么?</h3> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>console.log('first div')<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>console.log('second div')<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>console.log('button')<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      Click!
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>A: div外部<br>
+B: div内部<br>
+C: button<br>
+D: 所有嵌套元素的数组.<br>
+答案: C</p> <p>导致事件的最深嵌套元素是事件的目标。 你可以通过event.stopPropagation停止冒泡</p> <h3 id="_32-单击下面的html片段打印的内容是什么"><a href="#_32-单击下面的html片段打印的内容是什么" aria-hidden="true" class="header-anchor">#</a> 32. 单击下面的html片段打印的内容是什么?</h3> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>console.log('div')<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>console.log('p')<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    Click here!
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>A: p div<br>
+B: div p<br>
+C: p<br>
+D: div<br>
+答案: A</p> <p>如果我们单击p，我们会看到两个日志：p和div。在事件传播期间，有三个阶段：捕获，目标和冒泡。 默认情况下，事件处理程序在冒泡阶段执行（除非您将useCapture设置为true）。 它从最深的嵌套元素向外延伸。</p> <h3 id="_33-下面代码的输出是什么"><a href="#_33-下面代码的输出是什么" aria-hidden="true" class="header-anchor">#</a> 33. 下面代码的输出是什么?</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> person <span class="token operator">=</span> <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">&quot;Lydia&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">sayHi</span><span class="token punctuation">(</span><span class="token parameter">age</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token keyword">this</span><span class="token punctuation">.</span>name<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> is </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>age<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">sayHi</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>person<span class="token punctuation">,</span> <span class="token number">21</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">sayHi</span><span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span>person<span class="token punctuation">,</span> <span class="token number">21</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>A: undefined is 21 Lydia is 21<br>
+B: function function<br>
+C: Lydia is 21 Lydia is 21<br>
+D: Lydia is 21 function<br>
+答案: D</p> <p>使用两者，我们可以传递我们想要this关键字引用的对象。 但是，.call方法会立即执行！</p> <p>.bind方法会返回函数的拷贝值，但带有绑定的上下文！ 它不会立即执行。</p> <h3 id="_34-下面代码的输出是什么"><a href="#_34-下面代码的输出是什么" aria-hidden="true" class="header-anchor">#</a> 34. 下面代码的输出是什么?</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">sayHi</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">typeof</span> <span class="token function">sayHi</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>A: &quot;object&quot;<br>
+B: &quot;number&quot;<br>
+C: &quot;function&quot;<br>
+D: &quot;undefined&quot;<br>
+答案: B</p> <p>sayHi函数返回立即调用的函数（IIFE）的返回值。 该函数返回0，类型为数字。</p> <p>仅供参考：只有7种内置类型：null，undefined，boolean，number，string，object和symbol。 function不是一个类型，因为函数是对象，它的类型是object。</p> <h3 id="_35-下面这些值哪些是假值"><a href="#_35-下面这些值哪些是假值" aria-hidden="true" class="header-anchor">#</a> 35. 下面这些值哪些是假值?</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token keyword">new</span> <span class="token class-name">Number</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">(</span><span class="token string">&quot;&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">(</span><span class="token string">&quot; &quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">new</span> <span class="token class-name">Boolean</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">undefined</span><span class="token punctuation">;</span>
+</code></pre></div><p>A: 0, '', undefined<br>
+B: 0, new Number(0), '', new Boolean(false), undefined<br>
+C: 0, '', new Boolean(false), undefined<br>
+D: 所有都是假值<br>
+答案: A</p> <p>JavaScript中只有6个假值：</p> <p>undefined<br>
+null<br>
+NaN<br>
+0<br>
+'' (empty string)<br>
+false<br>
+函数构造函数，如new Number和new Boolean都是真值。</p> <h3 id="_36-下面代码的输出是什么"><a href="#_36-下面代码的输出是什么" aria-hidden="true" class="header-anchor">#</a> 36. 下面代码的输出是什么?</h3> <div class="language-js extra-class"><pre class="language-js"><code>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">typeof</span> <span class="token keyword">typeof</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>A: &quot;number&quot;<br>
+B: &quot;string&quot;<br>
+C: &quot;object&quot;<br>
+D: &quot;undefined&quot;<br>
+答案: B</p> <p>typeof 1 返回 &quot;number&quot;.<br>
+typeof &quot;number&quot; 返回 &quot;string&quot;</p> <h3 id="_37-下面代码的输出是什么"><a href="#_37-下面代码的输出是什么" aria-hidden="true" class="header-anchor">#</a> 37. 下面代码的输出是什么?</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> numbers <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+numbers<span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">11</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>numbers<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>A: [1, 2, 3, 7 x null, 11]<br>
+B: [1, 2, 3, 11]<br>
+C: [1, 2, 3, 7 x empty, 11]<br>
+D: SyntaxError<br>
+答案: C</p> <p>When you set a value to an element in an array that exceeds the length of the array, JavaScript creates something called &quot;empty slots&quot;. These actually have the value of undefined, but you will see something like:</p> <p>当你为数组中的元素设置一个超过数组长度的值时，JavaScript会创建一个名为“空插槽”的东西。 这些位置的值实际上是undefined，但你会看到类似的东西：</p> <p>[1, 2, 3, 7 x empty, 11]</p> <p>这取决于你运行它的位置（每个浏览器有可能不同）。</p> <h3 id="_38-下面代码的输出是什么"><a href="#_38-下面代码的输出是什么" aria-hidden="true" class="header-anchor">#</a> 38. 下面代码的输出是什么?</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> x<span class="token punctuation">,</span> y<span class="token punctuation">;</span>
+  <span class="token keyword">try</span> <span class="token punctuation">{</span>
+    <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">Error</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span>x<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token punctuation">(</span>x <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span>y <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>y<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>A: 1 undefined 2<br>
+B: undefined undefined undefined<br>
+C: 1 1 2<br>
+D: 1 undefined undefined<br>
+答案: A</p> <p>catch块接收参数x。当我们传递参数时，这与变量的x不同。这个变量x是属于catch作用域的。</p> <p>之后，我们将这个块级作用域的变量设置为1，并设置变量y的值。 现在，我们打印块级作用域的变量x，它等于1。</p> <p>在catch块之外，x仍然是undefined，而y是2。 当我们想在catch块之外的console.log(x)时，它返回undefined，而y返回2。</p> <h3 id="_39-javascript中的所有内容都是…"><a href="#_39-javascript中的所有内容都是…" aria-hidden="true" class="header-anchor">#</a> 39. JavaScript中的所有内容都是…</h3> <p>A：原始或对象<br>
+B：函数或对象<br>
+C：技巧问题！只有对象<br>
+D：数字或对象<br>
+答案: A</p> <p>JavaScript只有原始类型和对象。</p> <p>原始类型是boolean，null，undefined，bigint，number，string和symbol。</p> <h3 id="_40-下面代码的输出是什么"><a href="#_40-下面代码的输出是什么" aria-hidden="true" class="header-anchor">#</a> 40. 下面代码的输出是什么?</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">reduce</span><span class="token punctuation">(</span>
+  <span class="token punctuation">(</span><span class="token parameter">acc<span class="token punctuation">,</span> cur</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> acc<span class="token punctuation">.</span><span class="token function">concat</span><span class="token punctuation">(</span>cur<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>A: [0, 1, 2, 3, 1, 2]<br>
+B: [6, 1, 2]<br>
+C: [1, 2, 0, 1, 2, 3]<br>
+D: [1, 2, 6]<br>
+答案: C</p> <p>[1,2]是我们的初始值。 这是我们开始执行reduce函数的初始值，以及第一个acc的值。 在第一轮中，acc是[1,2]，cur是[0,1]。 我们将它们连接起来，结果是[1,2,0,1]。</p> <p>然后，acc的值为[1,2,0,1]，cur的值为[2,3]。 我们将它们连接起来，得到[1,2,0,1,2,3]。</p> <h3 id="_41-下面代码的输出是什么"><a href="#_41-下面代码的输出是什么" aria-hidden="true" class="header-anchor">#</a> 41. 下面代码的输出是什么?</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token operator">!</span><span class="token operator">!</span><span class="token keyword">null</span><span class="token punctuation">;</span>
+<span class="token operator">!</span><span class="token operator">!</span><span class="token string">&quot;&quot;</span><span class="token punctuation">;</span>
+<span class="token operator">!</span><span class="token operator">!</span><span class="token number">1</span><span class="token punctuation">;</span>
+</code></pre></div><p>A: false true false<br>
+B: false false true<br>
+C: false true true<br>
+D: true true false<br>
+答案: B</p> <p>null是假值。 !null返回true。 !true返回false。</p> <p>&quot;&quot;是假值。 !&quot;&quot;返回true。 !true返回false。</p> <p>1是真值。 !1返回false。 !false返回true。</p> <h3 id="_42-setinterval方法的返回值什么"><a href="#_42-setinterval方法的返回值什么" aria-hidden="true" class="header-anchor">#</a> 42. <code>setInterval</code>方法的返回值什么?</h3> <p>setInterval(() =&gt; console.log(&quot;Hi&quot;), 1000);
+A：一个唯一的id<br>
+B：指定的毫秒数<br>
+C：传递的函数<br>
+D：undefined<br>
+答案: A</p> <p>它返回一个唯一的id。 此id可用于使用clearInterval()函数清除该定时器。</p> <h3 id="_43-what-does-this-return"><a href="#_43-what-does-this-return" aria-hidden="true" class="header-anchor">#</a> 43. What does this return?</h3> <p>[...&quot;Lydia&quot;];<br>
+A: [&quot;L&quot;, &quot;y&quot;, &quot;d&quot;, &quot;i&quot;, &quot;a&quot;]<br>
+B: [&quot;Lydia&quot;]<br>
+C: [[], &quot;Lydia&quot;]<br>
+D: [[&quot;L&quot;, &quot;y&quot;, &quot;d&quot;, &quot;i&quot;, &quot;a&quot;]]<br>
+答案: A</p> <p>字符串是可迭代的。 扩展运算符将迭代的每个字符映射到一个元素。</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/Interview/JavaScript/index2.html" class="prev">
+          javascript 相关程序计算题
+        </a></span> <span class="next"><a href="/Interview/JavaScript/kaodian.html">
+          Javascript面试核心考点
+        </a>
+        →
+      </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.3c18ba2b.js" defer></script><script src="/assets/js/2.2d7f6841.js" defer></script><script src="/assets/js/30.68cd5081.js" defer></script>
+  </body>
+</html>
